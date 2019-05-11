@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<b>
+    <h2>Öğrenci Listesi</h2>
+    -------------------------------------
+
+    <div th:each="student : ${result}">
+        <p th:text="${student.no}"></p>
+        <p th:text="${student.firstName}"></p>
+        <p th:text="${student.surName}"></p>
+        -------------------------------------
+    </div>
+</b>
+
+</body>
+</html>
